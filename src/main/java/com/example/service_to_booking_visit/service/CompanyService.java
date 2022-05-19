@@ -1,10 +1,10 @@
-package service;
+package com.example.service_to_booking_visit.service;
 
+import com.example.service_to_booking_visit.persistance.Company;
+import com.example.service_to_booking_visit.persistance.Reservation;
+import com.example.service_to_booking_visit.repository.CompanyRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import persistance.Client;
-import persistance.Company;
-import repository.CompanyRepository;
 
 import java.util.List;
 
@@ -13,6 +13,7 @@ import java.util.List;
 public class CompanyService {
 
     private final CompanyRepository companyRepository;
+
 
     public Company findById(Long id) {
         return companyRepository.findById(id).orElseThrow();
@@ -29,5 +30,6 @@ public class CompanyService {
     public void deleteById(Long id) {
         companyRepository.deleteById(id);
     }
+
 
 }

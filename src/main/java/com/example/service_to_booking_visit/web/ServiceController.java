@@ -1,11 +1,10 @@
-package web;
+package com.example.service_to_booking_visit.web;
 
+import com.example.service_to_booking_visit.service.ServiceService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import persistance.Client;
-import persistance.Service;
-import service.ServiceService;
+import com.example.service_to_booking_visit.persistance.Service;
 
 import java.util.List;
 

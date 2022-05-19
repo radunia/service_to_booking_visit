@@ -1,4 +1,4 @@
-package persistance;
+package com.example.service_to_booking_visit.persistance;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,7 +19,7 @@ public class Service {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private Long duration;
     private Double payment;
-
 
 }

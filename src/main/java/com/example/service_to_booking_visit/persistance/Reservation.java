@@ -1,11 +1,11 @@
-package persistance;
+package com.example.service_to_booking_visit.persistance;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -16,8 +16,7 @@ public class Reservation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private LocalDate date;
-    private String place;
+    private LocalDateTime date;
 
     @OneToOne
     private Service service;

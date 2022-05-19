@@ -1,11 +1,10 @@
-package web;
+package com.example.service_to_booking_visit.web;
 
+import com.example.service_to_booking_visit.service.CalendarService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import persistance.Calendar;
-import persistance.Client;
-import service.CalendarService;
+import com.example.service_to_booking_visit.persistance.Calendar;
 
 import java.util.List;
 
